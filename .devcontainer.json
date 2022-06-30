@@ -1,5 +1,6 @@
 {
-  "image": "ghcr.io/mats16/devcontainer-for-aws:latest",
+  "image": "ghcr.io/mats16/devcontainer-for-aws:node16-corretto17",
+  "postCreateCommand": "npm install -g @aws-amplify/cli@9.0.0",
   "mounts": [
     "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
   ],
